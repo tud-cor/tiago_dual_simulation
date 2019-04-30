@@ -12,7 +12,7 @@
     </group>
 
     <group if="$(eval end_effector == 'schunk-wsg')">
-      <rosparam command="load" file="$(find tiago_dual_controller_configuration)/config/schunk-wsg_$(arg side)_joint_trajectory_controllers.yaml" />
+      <rosparam command="load" file="$(arg config_path)/schunk-wsg_$(arg side)_joint_trajectory_controllers.yaml" />
         <include file="$(find pal_wsg_gripper_controller_configuration_gazebo)/launch/gripper_fingertip_sensor_controller.launch">
           <arg name="side" value="$(arg side)"/>
           <arg name="finger" value="left"/>
