@@ -2,6 +2,14 @@
 Changelog for package tiago_dual_controller_configuration_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix_wsg_path' into 'erbium-devel'
+  Fix path for WSG gripper config files
+  See merge request robots/tiago_dual_simulation!1
+* Fix path for WSG gripper config files
+* Contributors: Victor Lopez, davidfernandez
+
 2.0.6 (2019-04-16)
 ------------------
 
