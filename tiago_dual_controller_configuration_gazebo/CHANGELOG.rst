@@ -2,6 +2,11 @@
 Changelog for package tiago_dual_controller_configuration_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add extra joints joint torque sensor state controller
+* Contributors: Victor Lopez
+
 2.0.7 (2019-05-02)
 ------------------
 * Merge branch 'fix_wsg_path' into 'erbium-devel'
