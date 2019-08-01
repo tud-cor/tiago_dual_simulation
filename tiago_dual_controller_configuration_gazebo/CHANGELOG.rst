@@ -2,8 +2,8 @@
 Changelog for package tiago_dual_controller_configuration_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.8 (2019-08-01)
+------------------
 * Add extra joints joint torque sensor state controller
 * Contributors: Victor Lopez
 
