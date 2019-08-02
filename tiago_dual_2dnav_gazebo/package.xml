@@ -11,6 +11,7 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <run_depend>tiago_2dnav</run_depend>
+  <run_depend>tiago_2dnav_gazebo</run_depend>
   <run_depend>tiago_dual_gazebo</run_depend>
   <run_depend>tiago_dual_2dnav</run_depend>
 </package>

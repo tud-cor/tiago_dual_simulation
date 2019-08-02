@@ -13,7 +13,7 @@
   <arg name="recording" default="false"/>
   <arg name="extra_gazebo_args" default=""/>
   <arg name="localization"   default="amcl"/>
-  <arg name="gzpose"         default="-x 0.78 -y -11.1 -z -0.003 -R 0.0 -P 0.0 -Y 70.0"/>
+  <arg name="gzpose"         default="-x 0.78 -y -5.0 -z -0.003 -R 0.0 -P 0.0 -Y 70.0"/>
   <arg name="tuck_arm"  default="true"/>
 
   <include file="$(find tiago_dual_2dnav_gazebo)/launch/tiago_dual_navigation.launch">
@@ -24,7 +24,7 @@
     <arg name="laser_model" value="$(arg laser_model)"/>
     <arg name="camera_model" value="$(arg camera_model)"/>
     <arg name="global_planner" value="global_planner"/>
-    <arg name="local_planner"  value="eband"/>
+    <arg name="local_planner"  value="teb"/>
     <arg name="localization"   value="$(arg localization)"/>
     <arg name="public_sim"     value="True"/>
     <arg name="gzpose"         value="$(arg gzpose)"/>
@@ -35,7 +35,7 @@
     <arg name="recording"  value="$(arg recording)"/>
     <arg name="extra_gazebo_args" value="$(arg extra_gazebo_args)"/>
   </include>
-  <include file="$(find tiago_dual_laser_sensors)/launch/rgbd_cloud_laser.launch">
+  <include file="$(find tiago_laser_sensors)/launch/rgbd_cloud_laser.launch">
     <arg name="cloud" value="/xtion/depth_registered/points"/>
   </include>
 

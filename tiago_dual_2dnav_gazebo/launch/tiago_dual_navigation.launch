@@ -51,7 +51,7 @@
       <arg name="extra_gazebo_args" value="$(arg extra_gazebo_args)"/>
     </include>
 
-    <include file="$(find tiago_dual_2dnav)/launch/navigation.launch">
+    <include file="$(find tiago_2dnav_gazebo)/launch/navigation.launch">
       <arg name="state"          value="localization"/>
       <arg name="planner"        value="$(arg planner)"/>
       <arg name="global_planner" value="$(arg global_planner)"/>
@@ -85,11 +85,11 @@
   <group if="$(arg advanced_navigation)">
     <!-- Advanced navigation -->
     <include file="$(find pal_head_manager)/launch/tiago_dual_head_manager.launch"/>
-    <node pkg="tiago_dual_2dnav" type="navigation_camera_mgr.py" name="navigation_camera_mgr" />
+    <node pkg="tiago_2dnav" type="navigation_camera_mgr.py" name="navigation_camera_mgr" />
     <node pkg="pal_zoi_detector" type="zoi_detector_node" name="zoi_detector" />
     <include file="$(find pal_waypoint)/launch/pal_waypoint.launch"/>
     <include file="$(find pal_navigation_manager)/launch/poi_navigation_server.launch"/>
-    <include file="$(find tiago_dual_laser_sensors)/launch/rgbd_cloud_laser.launch">
+    <include file="$(find tiago_laser_sensors)/launch/rgbd_cloud_laser.launch">
       <arg name="cloud"  value="/xtion/depth_registered/points"/>
     </include>
     <include file="$(find pal_map_utils)/launch/map_configuration_server.launch">
