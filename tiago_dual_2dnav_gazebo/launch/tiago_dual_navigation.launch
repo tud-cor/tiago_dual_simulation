@@ -17,6 +17,7 @@
   <arg name="local_planner"  default="pal"/>
   <arg name="localization"   default="amcl"/>
   <arg name="map"            default="$(env HOME)/.pal/tiago_dual_maps/configurations/$(arg world)"/>
+  <arg name="config_base_path" default="$(find pal_navigation_cfg_tiago_dual)"/>
 
   <arg name="rviz"     default="true"/>
   <arg name="gzclient" default="true"/>
@@ -60,6 +61,7 @@
       <arg name="map"            value="$(arg map)"/>
       <arg name="public_sim"     value="$(arg public_sim)"/>
       <arg name="rgbd_sensors"   value="$(arg advanced_navigation)"/>
+      <arg name="config_base_path" value="$(arg config_base_path)"/>
     </include>
 
    <group if="$(arg advanced_navigation)">
