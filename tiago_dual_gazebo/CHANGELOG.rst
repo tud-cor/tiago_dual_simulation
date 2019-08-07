@@ -2,6 +2,14 @@
 Changelog for package tiago_dual_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix_nav_simulation' into 'erbium-devel'
+  Fixing name and launches files due to the refactoring of the tiago_2d_nav
+  See merge request robots/tiago_dual_simulation!3
+* Fixing name and launches files due to the refactoring of the tiago_2d_nav
+* Contributors: Victor Lopez, alessandrodifava
+
 2.0.8 (2019-08-01)
 ------------------
 
