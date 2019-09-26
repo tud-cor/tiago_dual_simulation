@@ -86,7 +86,7 @@
 
   <group if="$(arg advanced_navigation)">
     <!-- Advanced navigation -->
-    <include file="$(find pal_head_manager)/launch/tiago_dual_head_manager.launch"/>
+    <include file="$(find pal_head_manager)/launch/tiago_head_manager.launch"/>
     <node pkg="tiago_2dnav" type="navigation_camera_mgr.py" name="navigation_camera_mgr" />
     <node pkg="pal_zoi_detector" type="zoi_detector_node" name="zoi_detector" />
     <include file="$(find pal_waypoint)/launch/pal_waypoint.launch"/>
