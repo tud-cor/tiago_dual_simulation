@@ -2,6 +2,9 @@
 Changelog for package tiago_dual_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.9 (2019-08-07)
 ------------------
 * Merge branch 'fix_nav_simulation' into 'erbium-devel'

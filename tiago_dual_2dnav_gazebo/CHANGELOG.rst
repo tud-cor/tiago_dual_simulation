@@ -2,6 +2,11 @@
 Changelog for package tiago_dual_2dnav_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add missing dependency
+* Contributors: Victor Lopez
+
 2.0.9 (2019-08-07)
 ------------------
 * Merge branch 'fix_nav_simulation' into 'erbium-devel'
