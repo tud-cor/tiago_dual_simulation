@@ -2,6 +2,11 @@
 Changelog for package tiago_dual_2dnav_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix head manager launch
+* Contributors: Victor Lopez
+
 2.0.10 (2019-09-26)
 -------------------
 * Add missing dependency
