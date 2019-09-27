@@ -2,6 +2,14 @@
 Changelog for package tiago_dual_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'speed-limit' into 'erbium-devel'
+  removed speed limit dep as it is in bringup
+  See merge request robots/tiago_dual_simulation!4
+* removed speed limit dep as it is in bringup
+* Contributors: Procópio Stein, Victor Lopez
+
 2.0.11 (2019-09-26)
 -------------------
 
