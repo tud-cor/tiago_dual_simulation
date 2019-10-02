@@ -2,6 +2,11 @@
 Changelog for package tiago_dual_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Remove speed limit
+* Contributors: Victor Lopez
+
 2.0.12 (2019-09-27)
 -------------------
 * Merge branch 'speed-limit' into 'erbium-devel'
