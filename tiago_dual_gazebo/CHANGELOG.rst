@@ -2,8 +2,8 @@
 Changelog for package tiago_dual_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.13 (2019-10-02)
+-------------------
 * Remove speed limit
 * Contributors: Victor Lopez
 
