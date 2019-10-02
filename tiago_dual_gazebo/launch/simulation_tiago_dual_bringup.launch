@@ -54,14 +54,6 @@
     </include>
   </group>-->
 
-  <!-- Speed limit -->
-  <group unless="$(arg public_sim)">
-    <include file="$(find speed_limit)/launch/speed_limit.launch">
-      <arg name="config"    value="$(find tiago_bringup)/config/speed_limit.yaml"/>
-      <arg name="footprint" value="$(find pmb2_description)/urdf/base/footprint.yaml"/>
-    </include>
-  </group>
-
   <!-- Joystick controller -->
   <include file="$(find tiago_dual_bringup)/launch/joystick_teleop.launch"/>
 
