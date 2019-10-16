@@ -2,8 +2,8 @@
 Changelog for package tiago_dual_2dnav_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.15 (2019-10-16)
+-------------------
 * Merge branch 'refactor' into 'erbium-devel'
   Refactor
   See merge request robots/tiago_dual_simulation!6
