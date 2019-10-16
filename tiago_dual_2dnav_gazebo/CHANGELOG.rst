@@ -2,6 +2,15 @@
 Changelog for package tiago_dual_2dnav_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'refactor' into 'erbium-devel'
+  Refactor
+  See merge request robots/tiago_dual_simulation!6
+* consolidated public launches
+* removed map relay
+* Contributors: Procópio Stein, Victor Lopez
+
 2.0.14 (2019-10-10)
 -------------------
 

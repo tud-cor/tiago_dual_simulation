@@ -2,6 +2,15 @@
 Changelog for package tiago_dual_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'refactor' into 'erbium-devel'
+  Refactor
+  See merge request robots/tiago_dual_simulation!6
+* removed joystick from sim
+* fixed twist mux usage
+* Contributors: Procópio Stein, Victor Lopez
+
 2.0.14 (2019-10-10)
 -------------------
 * Merge branch 'remove-sonar-cloud' into 'erbium-devel'
