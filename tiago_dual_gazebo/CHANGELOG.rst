@@ -2,8 +2,8 @@
 Changelog for package tiago_dual_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.16 (2020-04-08)
+-------------------
 * Merge branch 'add-arm-sides' into 'erbium-devel'
   Add arm_left and arm_right
   See merge request robots/tiago_dual_simulation!7
