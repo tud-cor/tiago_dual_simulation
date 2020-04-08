@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
+  <arg name="arm_left"  default="True"/>
+  <arg name="arm_right"  default="True"/>
   <arg name="end_effector_left"  default="pal-hey5"/>
   <arg name="end_effector_right"  default="pal-hey5"/>
   <arg name="ft_sensor_left"  default="schunk-ft"/>
@@ -9,7 +11,7 @@
   <arg name="gzpose" default="-x 0 -y 0 -z 0.0 -R 0.0 -P 0.0 -Y 0.0"/>
   <arg name="multi" default=""/>
   <arg name="model_name" default="tiago_dual"/>
-  <arg name="file_suffix" value="$(eval (end_effector_left + ('' if not ft_sensor_left else '_'+ft_sensor_left) + '_' + end_effector_right + ('' if not ft_sensor_right else '_'+ft_sensor_right)))"/>
+  <arg name="file_suffix" value="$(eval ('no-arm-left' if not arm_left else end_effector_left + ('' if not ft_sensor_left else '_'+ft_sensor_left)) + '_' + ('no-arm-right' if not arm_right else end_effector_right + ('' if not ft_sensor_right else '_'+ft_sensor_right)))"/>
 
   <rosparam ns="pal_robot_info" param="type">"tiago_dual"</rosparam>
 
@@ -25,6 +27,8 @@
 
   <!-- Robot model -->
   <include file="$(find tiago_dual_description)/robots/upload.launch">
+    <arg name="arm_left"  value="$(arg arm_left)"/>
+    <arg name="arm_right"  value="$(arg arm_right)"/>
     <arg name="end_effector_left"  value="$(arg end_effector_left)"/>
     <arg name="end_effector_right"  value="$(arg end_effector_right)"/>
     <arg name="ft_sensor_left"  value="$(arg ft_sensor_left)"/>
