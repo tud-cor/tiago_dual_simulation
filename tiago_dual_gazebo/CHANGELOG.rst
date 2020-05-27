@@ -2,8 +2,8 @@
 Changelog for package tiago_dual_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.17 (2020-05-27)
+-------------------
 * Merge branch 'tiago_dual_screen' into 'erbium-devel'
   Add has_screen to some launch files
   See merge request robots/tiago_dual_simulation!9
