@@ -2,6 +2,14 @@
 Changelog for package tiago_dual_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'tiago_dual_screen' into 'erbium-devel'
+  Add has_screen to some launch files
+  See merge request robots/tiago_dual_simulation!9
+* Add has_screen to some launch files
+* Contributors: Victor Lopez, victor
+
 2.0.16 (2020-04-08)
 -------------------
 * Merge branch 'add-arm-sides' into 'erbium-devel'
