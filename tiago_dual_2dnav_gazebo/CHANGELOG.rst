@@ -2,6 +2,9 @@
 Changelog for package tiago_dual_2dnav_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.17 (2020-05-27)
 -------------------
 * Merge branch 'tiago_dual_screen' into 'erbium-devel'

@@ -2,6 +2,14 @@
 Changelog for package tiago_dual_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'rename_tf_prefix' into 'erbium-devel'
+  Rename tf_prefix param
+  See merge request robots/tiago_dual_simulation!8
+* Rename tf_prefix param
+* Contributors: davidfernandez, victor
+
 2.0.17 (2020-05-27)
 -------------------
 * Merge branch 'tiago_dual_screen' into 'erbium-devel'
