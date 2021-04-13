@@ -2,8 +2,8 @@
 Changelog for package tiago_dual_controller_configuration_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.19 (2021-04-13)
+-------------------
 * Merge branch 'custom-end-effector' into 'erbium-devel'
   feat: enable custom end effector in simulation
   See merge request robots/tiago_dual_simulation!10
