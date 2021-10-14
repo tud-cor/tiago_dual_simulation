@@ -20,6 +20,7 @@
   <arg name="recording" default="false"/>
   <arg name="extra_gazebo_args" default=""/>
   <arg name="use_moveit_camera" default="false"/>
+  <arg name="base_type" default="pmb2"/>
 
   <env name="LC_NUMERIC" value="C" />
 
@@ -47,6 +48,7 @@
     <arg name="camera_model"  value="$(arg camera_model)"/>
     <arg name="multi" value="$(arg multi)"/>
     <arg name="gzpose" value="$(arg gzpose)"/>
+    <arg name="base_type" value="$(arg base_type)"/>
   </include>
 
   <!-- bring up robot -->
@@ -61,6 +63,7 @@
     <arg name="camera_model" value="$(arg camera_model)"/>
     <arg name="public_sim"  value="$(arg public_sim)"/>
     <arg name="use_moveit_camera" value="$(arg use_moveit_camera)"/>
+    <arg name="base_type" value="$(arg base_type)"/>
   </include>
 
   <!-- point cloud throttle and filter -->
