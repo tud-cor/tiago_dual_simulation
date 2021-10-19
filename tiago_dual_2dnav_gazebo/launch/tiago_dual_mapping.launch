@@ -17,7 +17,7 @@
 
   <arg name="planner"        default="base"/>
   <arg name="global_planner" default="global_planner"/>
-  <arg name="local_planner"  default="$(eval 'teb' if arg('public_sim') else 'pal')"/>
+  <arg name="local_planner"  default="$(eval 'teb' if (arg('public_sim') or arg('base_type')=='omni_base') else 'pal')"/>
   <arg name="mapping"        default="$(eval 'gmapping' if arg('public_sim') else 'karto')"/>
 
   <arg name="rviz"     default="true"/>
@@ -60,6 +60,7 @@
       <arg name="local_planner"  value="$(arg local_planner)"/>
       <arg name="public_sim"     value="$(arg public_sim)"/>
       <arg name="rgbd_sensors"   value="$(arg rgbd_sensors)"/>
+      <arg name="base_type" value="$(arg base_type)"/>
     </include>
 
     <node name="rviz" pkg="rviz" type="rviz" if="$(arg rviz)"

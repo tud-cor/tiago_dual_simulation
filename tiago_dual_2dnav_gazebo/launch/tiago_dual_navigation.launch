@@ -20,7 +20,7 @@
 
   <arg name="planner"        default="base"/>
   <arg name="global_planner" default="global_planner"/>
-  <arg name="local_planner"  default="$(eval 'teb' if arg('public_sim') else 'pal')"/>
+  <arg name="local_planner"  default="$(eval 'teb' if (arg('public_sim') or arg('base_type')=='omni_base') else 'pal')"/>
   <arg name="localization"   default="amcl"/>
   <arg name="map"            default="$(env HOME)/.pal/tiago_dual_maps/configurations/$(arg world)"/>
   <arg name="config_base_path" default="$(find pal_navigation_cfg_tiago_dual)"/>
