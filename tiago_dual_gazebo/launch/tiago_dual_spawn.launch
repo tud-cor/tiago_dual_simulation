@@ -12,12 +12,15 @@
   <arg name="gzpose" default="-x 0 -y 0 -z 0.0 -R 0.0 -P 0.0 -Y 0.0"/>
   <arg name="multi" default=""/>
   <arg name="model_name" default="tiago_dual"/>
+  <arg name="base_type" default="pmb2"/>
+  <arg name="base_type_suffix" value="" unless="$(eval arg('base_type') == 'omni_base')"/>
+  <arg name="base_type_suffix" value="_omni" if="$(eval arg('base_type') == 'omni_base')"/>
   <arg name="file_suffix" value="$(eval ('no-arm-left' if not arm_left else end_effector_left + ('' if not ft_sensor_left else '_'+ft_sensor_left)) + '_' + ('no-arm-right' if not arm_right else end_effector_right + ('' if not ft_sensor_right else '_'+ft_sensor_right)))"/>
 
   <rosparam ns="pal_robot_info" param="type">"tiago_dual"</rosparam>
 
   <!-- PID gains -->
-  <rosparam command="load" file="$(find tiago_dual_controller_configuration_gazebo)/config/pids.yaml"/>
+  <rosparam command="load" file="$(find tiago_dual_controller_configuration_gazebo)/config/pids$(arg base_type_suffix).yaml"/>
 
   <rosparam command="load" file="$(find tiago_dual_controller_configuration_gazebo)/config/hardware_gazebo/tiago_dual_pal_hardware_gazebo_$(arg file_suffix).yaml"/>
 
@@ -38,6 +41,7 @@
     <arg name="camera_model" value="$(arg camera_model)"/>
     <arg name="has_screen" value="$(arg has_screen)"/>
     <arg name="multi"  value="$(arg multi)"/>
+    <arg name="base_type"  value="$(arg base_type)"/>
   </include>
 
   <!-- Spawn robot in Gazebo -->
