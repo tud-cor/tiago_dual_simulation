@@ -2,6 +2,15 @@
 Changelog for package tiago_dual_controller_configuration_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'omni_base_robot' into 'erbium-devel'
+  Creating omni base robot
+  See merge request robots/tiago_dual_simulation!12
+* updated configuration for tiago with omni_base
+* Creating omni base robot
+* Contributors: antoniobrandi, saikishor
+
 2.1.0 (2021-05-06)
 ------------------
 * Merge branch 'robotiq_gripper' into 'erbium-devel'
