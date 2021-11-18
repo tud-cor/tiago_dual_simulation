@@ -17,7 +17,18 @@
   <arg name="base_type_suffix" value="_omni" if="$(eval arg('base_type') == 'omni_base')"/>
   <arg name="file_suffix" value="$(eval ('no-arm-left' if not arm_left else end_effector_left + ('' if not ft_sensor_left else '_'+ft_sensor_left)) + '_' + ('no-arm-right' if not arm_right else end_effector_right + ('' if not ft_sensor_right else '_'+ft_sensor_right)))"/>
 
-  <rosparam ns="pal_robot_info" param="type">"tiago_dual"</rosparam>
+  <rosparam ns="pal_robot_info" subst_value="true">
+    type: "tiago_dual"
+    arm: True
+    end_effector_left: $(arg end_effector_left)
+    end_effector_right: $(arg end_effector_right)
+    ft_sensor_left: $(arg ft_sensor_left)
+    ft_sensor_right: $(arg ft_sensor_right)
+    laser_model: $(arg laser_model)
+    camera_model: $(arg camera_model)
+    has_screen: $(arg has_screen)
+    base_type: $(arg base_type)
+  </rosparam>
 
   <!-- PID gains -->
   <rosparam command="load" file="$(find tiago_dual_controller_configuration_gazebo)/config/pids$(arg base_type_suffix).yaml"/>
