@@ -10,6 +10,7 @@
   <arg name="laser_model"  default="sick-571"/>
   <arg name="camera_model"  default="orbbec-astra"/>
   <arg name="has_screen"    default="False"/>
+  <arg name="base_type" default="pmb2"/>
 
   <arg name="world"  default="small_office"/>
   <arg name="gzpose" default="-x 0.0 -y 0.0 -z 0.0 -R 0.0 -P 0.0 -Y 0.0"/>
@@ -29,7 +30,6 @@
 
   <arg name="sim_sufix" value="_public_sim"     if="$(arg public_sim)"/>
   <arg name="sim_sufix" value=""                unless="$(arg public_sim)"/>
-  <arg name="base_type" default="pmb2"/>
 
   <env name="PAL_HOST" value="tiago_dual" />
 
