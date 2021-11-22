@@ -2,6 +2,9 @@
 Changelog for package tiago_dual_controller_configuration_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.2.2 (2021-11-22)
 ------------------
 
