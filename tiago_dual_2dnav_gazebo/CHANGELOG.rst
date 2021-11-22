@@ -2,6 +2,14 @@
 Changelog for package tiago_dual_2dnav_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix-omnibase' into 'erbium-devel'
+  Fixed arg order
+  See merge request robots/tiago_dual_simulation!14
+* Fixed arg order
+* Contributors: antoniobrandi, saikishor
+
 2.2.1 (2021-11-18)
 ------------------
 

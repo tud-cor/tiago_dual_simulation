@@ -2,6 +2,9 @@
 Changelog for package tiago_dual_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.2.1 (2021-11-18)
 ------------------
 * Merge branch 'pal_robot_info' into 'erbium-devel'
