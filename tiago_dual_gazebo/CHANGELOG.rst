@@ -2,8 +2,8 @@
 Changelog for package tiago_dual_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.2.4 (2021-11-25)
+------------------
 * Merge branch 'fix-omni-base' into 'erbium-devel'
   Fix omni base
   See merge request robots/tiago_dual_simulation!16
