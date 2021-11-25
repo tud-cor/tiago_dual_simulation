@@ -2,6 +2,14 @@
 Changelog for package tiago_dual_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix-omni-base' into 'erbium-devel'
+  Fix omni base
+  See merge request robots/tiago_dual_simulation!16
+* removing the need for duplicated pids config file
+* Contributors: antoniobrandi, saikishor
+
 2.2.3 (2021-11-22)
 ------------------
 
