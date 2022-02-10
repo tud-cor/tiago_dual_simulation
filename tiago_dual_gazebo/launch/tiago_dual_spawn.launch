@@ -16,20 +16,21 @@
   <arg name="file_suffix" value="$(eval ('no-arm-left' if not arm_left else end_effector_left + ('' if not ft_sensor_left else '_'+ft_sensor_left)) + '_' + ('no-arm-right' if not arm_right else end_effector_right + ('' if not ft_sensor_right else '_'+ft_sensor_right)))"/>
   <arg name="initial_joint_positions"
        doc="Initial joint configuration of arm of Tiago (tucked in)."
-       default="-J arm_left_1_joint -1.1002061948294797
-                -J arm_left_2_joint 1.4577288074257604
-                -J arm_left_3_joint 2.7142527181773417
-                -J arm_left_4_joint 1.696951733073523
-                -J arm_left_5_joint -1.571222293677943
-                -J arm_left_6_joint 1.3874221739312764
+       default="-J arm_left_1_joint -1.1
+                -J arm_left_2_joint 1.4679
+                -J arm_left_3_joint 2.714
+                -J arm_left_4_joint 1.7095
+                -J arm_left_5_joint -1.5708
+                -J arm_left_6_joint 1.3898
                 -J arm_left_7_joint 0.0
-                -J arm_right_1_joint -1.1002088050475676
-                -J arm_right_2_joint 1.4577270263956228
-                -J arm_right_3_joint 2.714224084728542
-                -J arm_right_4_joint 1.6969268762820837
-                -J arm_right_5_joint -1.5709926894042052
-                -J arm_right_6_joint 1.38735625788817
-                -J arm_right_7_joint 0.0"/>
+                -J arm_right_1_joint -1.1
+                -J arm_right_2_joint 1.4679
+                -J arm_right_3_joint 2.714
+                -J arm_right_4_joint 1.7095
+                -J arm_right_5_joint -1.5708
+                -J arm_right_6_joint 1.3898
+                -J arm_right_7_joint 0.0
+                -J torso_lift_joint 0.15"/>
 
   <rosparam ns="pal_robot_info" subst_value="true">
     type: "tiago_dual"
