@@ -72,7 +72,7 @@
   <!-- Spawn robot in Gazebo -->
   <node pkg="gazebo_ros" type="spawn_model" name="spawn_model"
     args="-urdf -param robot_description $(arg gzpose) -model $(arg model_name)
-          $(arg initial_joint_positions)
+          $(arg initial_joint_positions) -unpause
           " />
 
 </launch>

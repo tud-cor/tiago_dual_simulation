@@ -28,6 +28,7 @@
   <include file="$(find pal_gazebo_worlds)/launch/pal_gazebo.launch">
     <arg name="world" value="$(arg world)"/>
     <arg name="gui" value="$(arg gui)"/>
+    <arg name="paused" value="True"/>
     <arg name="debug" value="$(arg debug)"/>
     <arg name="recording" value="$(arg recording)"/>
     <arg name="extra_gz_model_path" value="$(find tiago_gazebo)/models"/>
