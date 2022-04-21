@@ -20,6 +20,8 @@
   <arg name="global_planner" default="global_planner"/>
   <arg name="local_planner"  default="$(eval 'teb' if (arg('public_sim') or arg('base_type')=='omni_base') else 'pal')"/>
   <arg name="mapping"        default="$(eval 'gmapping' if arg('public_sim') else 'karto')"/>
+  
+  <arg name="use_moveit_camera" default="false"/>
 
   <arg name="rviz"     default="true"/>
   <arg name="gzclient" default="true"/>
@@ -50,6 +52,7 @@
       <arg name="recording"  value="$(arg recording)"/>
       <arg name="extra_gazebo_args" value="$(arg extra_gazebo_args)"/>
       <arg name="base_type" value="$(arg base_type)"/>
+      <arg name="use_moveit_camera" default="$(arg use_moveit_camera)"/>
     </include>
 
     <include file="$(find tiago_2dnav_gazebo)/launch/navigation.launch">
